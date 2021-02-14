@@ -3,7 +3,7 @@ const sqlite3=require('sqlite3').verbose()
 const express=require('express');
 const app=express();
 const moment=require('moment');
-const wss = new WebSocket.Server({ server:app.listen(8080) });
+const wss = new WebSocket.Server({ server:app.listen(3000) });
   
   
 wss.on('connection', ws => {
