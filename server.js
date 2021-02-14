@@ -7,7 +7,7 @@ const wss = new WebSocket.Server({ server:app.listen(8080) });
   
   
 wss.on('connection', ws => {
-    let days=('C:\\Users\\eyth_\\Desktop\\HUA\\WebDev\\tracectories_be\\data\\Days.db')
+    let days=('./database/Days.db.example')
     const db = new sqlite3.Database(days, (err) => {
     if (err) {  return console.error(err.message); }
     console.log("Connected to database");
