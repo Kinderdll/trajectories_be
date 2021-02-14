@@ -1,2 +1,3 @@
-.node_modudles
+node_modudles/
 .vscode
+database/Days.db
